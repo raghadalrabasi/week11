@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습문제13</title>
+</head>
+<body>
+    <input id="dept" type="text" name="department" value="web programming">
+    <div id="output"></div>
+
+    <script type="text/javascript">
+        var inputElement = document.getElementById("dept");
+        var name = inputElement.name;
+        
+        var outputDiv = document.getElementById("output");
+        outputDiv.innerHTML = "Name 속성값: " + name;
+    </script>
+</body>
+</html>
+

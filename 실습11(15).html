@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습문제15</title>
+</head>
+<body>
+    <div id="button_area">
+        <input type="button" value="button 1"/>
+        <input type="button" value="button 2"/>
+        <input type="button" value="button 3"/>
+    </div>
+
+    <script type="text/javascript">
+        var buttonArea = document.getElementById("button_area");
+        var buttons = buttonArea.getElementsByTagName("input");
+
+        for (var i = 0; i < buttons.length; i++) {
+            buttons[i].addEventListener('click', function() {
+               this.remove();
+            });
+        }
+    </script>
+</body>
+</html>
+
+
+

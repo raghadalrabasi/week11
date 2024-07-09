@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습문제14</title>
+</head>
+<body>
+    <div id="button_area"></div>
+
+    <script type="text/javascript">
+        var buttonArea = document.getElementById("button_area");
+        
+        var btn1 = document.createElement("input");
+        btn1.type = "button";
+        btn1.value = "자바스크립트에 의해서 동적으로 생성 및 삽입되었음 (1)";
+        document.getElementById("button_area").appendChild(btn1);
+
+        var btn2 = document.createElement("input");
+        btn2.type = "button";
+        btn2.value = "자바스크립트에 의해서 동적으로 생성 및 삽입되었음 (2)";
+        document.getElementById("button_area").appendChild(btn2);
+    </script>
+</body>
+</html>
